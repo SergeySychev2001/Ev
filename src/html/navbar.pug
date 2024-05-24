@@ -1,0 +1,17 @@
+mixin nav-link(text)
+    li.nav-item
+        span.nav-link=text
+
+nav.navbar.navbar-expand-lg.py-3
+    .container.px-5
+        a.navbar-brand(href="index.html")
+            span.fw-bolder.text-primary ЭвакуаторАбинск
+        button.navbar-toggler(type="button")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse 
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
+                +nav-link("Главная")
+                +nav-link("О нас")
+                +nav-link("Что перевозим")
+                +nav-link("Услуги")
+                +nav-link("Контакты")

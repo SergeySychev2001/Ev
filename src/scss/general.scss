@@ -1,0 +1,39 @@
+.bg-custom-gradient {
+    background: linear-gradient(135deg, $gray-700 0%, $red 100%);
+}
+
+.text-custom-gradient {
+    background: linear-gradient(135deg, $gray-700 0%, $red 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list-group-borderless {
+    .list-group-item {
+        border: none;
+    }
+}
+
+.boxed-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    overflow: hidden;
+    & > img {
+        width: 100%;
+    }
+}
+
+//ovveriding
+.card {
+    overflow: hidden;
+}

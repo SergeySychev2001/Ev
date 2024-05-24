@@ -1,0 +1,16 @@
+mixin card(img, title, text)
+    .col-sm-12.col-md-6.col-lg-4
+        .card.shadow.border-0.rounded-4
+            img.card-img-top(src=img)
+            .card-body 
+                span.card-title.fw-bolder=title
+                p.card-text=text
+
+section.mb-5
+    .d-flex.align-items-center.justify-content-between.mb-4
+        h2.text-secondary.fw-bolder.mb-0 Перевозимая техника
+    .row.g-4.mb-4
+        +card("https://dummyimage.com/300x400/343a40/6c757d", "Title 1", "Lorem")
+        +card("https://dummyimage.com/300x400/343a40/6c757d", "Title 2", "Lorem")
+        +card("https://dummyimage.com/300x400/343a40/6c757d", "Title 3", "Lorem")
+        +card("https://dummyimage.com/300x400/343a40/6c757d", "Title 3", "Lorem")

@@ -1,0 +1,16 @@
+mixin card(icon, text, margin)
+    .card.shadow.border-0.rounded-4(class = margin ? "mb-4" : "mb-0")
+        .card-body.p-5
+            .row.align-items-center.gx-5
+                .col.text-center.text-lg-start.mb-4.mb-lg-0
+                    .bg-light.p-4.rounded-4=icon
+                .col-lg-8
+                    span=text
+
+section.mb-5
+    .d-flex.align-items-center.justify-content-between.mb-4
+        h2.text-primary.fw-bolder.mb-0 Наши преймущества
+    +card("dfg", "gdfgdfg", true)
+    +card("dfg", "gdfgdfg", true)
+    +card("dfg", "gdfgdfg", false)
+    
