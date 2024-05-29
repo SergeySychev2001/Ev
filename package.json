@@ -58,9 +58,7 @@
 		"serve": "^14.2.3",
 		"vinyl-ftp": "^0.6.1",
 		"webp-converter": "*2.2.3",
-		"webpack-stream": "^7.0.0"
-	},
-	"dependencies": {
+		"webpack-stream": "^7.0.0",
 		"gulp-pug": "^5.0.0"
 	}
 }

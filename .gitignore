@@ -3,5 +3,6 @@
 .temporary_cache
 
 node_modules
+dist
 package-lock.json
 gulp/version.json
