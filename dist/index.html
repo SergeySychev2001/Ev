@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Document</title>
   </head>
   <body class="d-flex flex-column h-100">
@@ -22,9 +23,9 @@
         </div>
       </div>
     </nav>
-    <header class="bg-primary bg-opacity-10 py-5">
+    <header class="bg-primary bg-opacity-10 header py-5">
       <div class="container px-3 px-md-5 py-5">
-        <div class="row align-items-center gx-5">
+        <div class="align-items-center gx-5 row">
           <div class="col-xxl-5">
             <div class="text-center text-xxl-start">
               <div class="fs-3 fw-light text-muted">Безопасно. Быстро. Надежно.</div>
@@ -33,9 +34,9 @@
             </div>
           </div>
           <div class="col-xxl-7 mt-5 mt-xxl-0">
-            <div class="header"> 
-              <div class="rounded-4 shadow bg-primary header-image"><img src="images/main.jpg"></div>
-              <div class="rounded-4 shadow border-0 card mt-4"> 
+            <div class="align-items-center d-flex flex-column">
+              <div class="rounded-4 header-block-width bg-primary header-block-height overflow-hidden"><img class="w-100" src="images/main.jpg"></div>
+              <div class="rounded-4 card header-block-width mt-4"> 
                 <div class="card-body p-4 p-md-5">test</div>
               </div>
             </div>
@@ -48,57 +49,49 @@
         <div class="row justify-content-center">
           <div class="text-center my-5"><span class="fw-bolder d-inline display-5">О нас</span></div>
         </div>
-        <div class="mb-4 g-4 row">
-              <div class="col-md-6 col-sm-12">
-                <div class="rounded-4 shadow border-0 card">
+        <div class="swiper general-swiper">
+          <div class="swiper-wrapper">
+                <div class="rounded-4 card swiper-slide">
                   <div class="card-body p-4 p-md-5">
-                    <div class="mb-4 align-items-center d-flex">
+                    <div class="align-items-center d-flex mb-4">
                       <div class="bg-primary boxed-icon flex-shrink-0 me-3 rounded-3 text-white"><i class="bi bi bi-clock-history"></i></div>
                       <div class="fw-bolder h3 mb-0"><span class="d-inline text-break">Опыт более 5 лет</span></div>
                     </div><span>Опыт эффективной и безопасной эвакуации различных видов техники с учетом всех технических особенностей.</span>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="rounded-4 shadow border-0 card">
+                <div class="rounded-4 card swiper-slide">
                   <div class="card-body p-4 p-md-5">
-                    <div class="mb-4 align-items-center d-flex">
+                    <div class="align-items-center d-flex mb-4">
                       <div class="bg-primary boxed-icon flex-shrink-0 me-3 rounded-3 text-white"><i class="bi bi bi-person-fill"></i></div>
                       <div class="fw-bolder h3 mb-0"><span class="d-inline text-break">Профессиональный подход</span></div>
                     </div><span>Наш опытный персонал обладает широкими знаниями и навыками в области эвакуации техники, что позволяет нам выполнять задачи качественно и безопасно.</span>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="rounded-4 shadow border-0 card">
+                <div class="rounded-4 card swiper-slide">
                   <div class="card-body p-4 p-md-5">
-                    <div class="mb-4 align-items-center d-flex">
+                    <div class="align-items-center d-flex mb-4">
                       <div class="bg-primary boxed-icon flex-shrink-0 me-3 rounded-3 text-white"><i class="bi bi bi-calendar2-range-fill"></i></div>
                       <div class="fw-bolder h3 mb-0"><span class="d-inline text-break">Гибкий график работы</span></div>
                     </div><span>Мы работаем круглосуточно и готовы предоставить услуги по эвакуации техники в удобное для вас время, даже в выходные и праздничные дни.</span>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="rounded-4 shadow border-0 card">
+                <div class="rounded-4 card swiper-slide">
                   <div class="card-body p-4 p-md-5">
-                    <div class="mb-4 align-items-center d-flex">
+                    <div class="align-items-center d-flex mb-4">
                       <div class="bg-primary boxed-icon flex-shrink-0 me-3 rounded-3 text-white"><i class="bi bi bi-tools"></i></div>
                       <div class="fw-bolder h3 mb-0"><span class="d-inline text-break">Широкий спектр услуг</span></div>
                     </div><span>Мы предлагаем не только эвакуацию различных видов техники, но и дополнительные услуги по транспортировке, консультированию и поддержке клиентов.</span>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="rounded-4 shadow border-0 card">
+                <div class="rounded-4 card swiper-slide">
                   <div class="card-body p-4 p-md-5">
-                    <div class="mb-4 align-items-center d-flex">
+                    <div class="align-items-center d-flex mb-4">
                       <div class="bg-primary boxed-icon flex-shrink-0 me-3 rounded-3 text-white"><i class="bi bi bi-emoji-smile-fill"></i></div>
                       <div class="fw-bolder h3 mb-0"><span class="d-inline text-break">Ответственный подход к работе</span></div>
                     </div><span>Мы ценим доверие наших клиентов и всегда стремимся к четкому выполнению задач, обеспечивая сохранность и целостность перевозимой техники.</span>
                   </div>
                 </div>
-              </div>
+          </div>
         </div>
       </div>
     </section>
@@ -107,31 +100,25 @@
         <div class="row justify-content-center">
           <div class="text-center my-5"><span class="fw-bolder d-inline display-5">Перевозимая техника</span></div>
         </div>
-        <div class="mb-4 g-4 row">
-              <div class="col-md-6 col-sm-12 col-lg-4">
-                <div class="rounded-4 shadow border-0 card">
-                  <div class="card-image"><img src="images/bike.jpg"></div>
+        <div class="swiper objects-swiper">
+          <div class="swiper-wrapper swiper-wrapper-linear">
+                <div class="rounded-4 card swiper-slide">
+                  <div class="card-image"><img class="w-100" src="images/bike.jpg"></div>
                   <div class="card-body text-center"><span class="card-title fs-5">Мототехника</span></div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12 col-lg-4">
-                <div class="rounded-4 shadow border-0 card">
-                  <div class="card-image"><img src="images/passenger.jpg"></div>
+                <div class="rounded-4 card swiper-slide">
+                  <div class="card-image"><img class="w-100" src="images/passenger.jpg"></div>
                   <div class="card-body text-center"><span class="card-title fs-5">Легковые авто</span></div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12 col-lg-4">
-                <div class="rounded-4 shadow border-0 card">
-                  <div class="card-image"><img src="images/offroad.jpg"></div>
+                <div class="rounded-4 card swiper-slide">
+                  <div class="card-image"><img class="w-100" src="images/offroad.jpg"></div>
                   <div class="card-body text-center"><span class="card-title fs-5">Внедорожники</span></div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12 col-lg-4">
-                <div class="rounded-4 shadow border-0 card">
-                  <div class="card-image"><img src="images/bus.jpg"></div>
+                <div class="rounded-4 card swiper-slide">
+                  <div class="card-image"><img class="w-100" src="images/bus.jpg"></div>
                   <div class="card-body text-center"><span class="card-title fs-5">Микроавтобусы</span></div>
                 </div>
-              </div>
+          </div>
         </div>
       </div>
     </section>
@@ -140,9 +127,9 @@
         <div class="row justify-content-center">
           <div class="text-center my-5"><span class="fw-bolder d-inline display-5">Услуги</span></div>
         </div>
-        <div class="mb-4 g-4 row">
-          <div class="col-md-6 col-sm-12 mb-5"> 
-            <div class="rounded-4 shadow border-0 card">
+        <div class="row g-4">
+          <div class="col-md-6 col-sm-12">
+            <div class="rounded-4 card">
               <div class="card-body p-4 p-md-5">
                 <div class="fw-bolder h3 mb-4 text-primary"><span class="d-inline">Основные</span></div>
                 <table class="table">
@@ -168,8 +155,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 mb-5"> 
-            <div class="rounded-4 shadow border-0 card">
+          <div class="col-md-6 col-sm-12">
+            <div class="rounded-4 card">
               <div class="card-body p-4 p-md-5">
                 <div class="fw-bolder h3 mb-4 text-secondary"><span class="d-inline">Дополнительные</span></div>
                 <table class="table">
@@ -198,6 +185,7 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

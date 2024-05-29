@@ -8,12 +8,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-.list-group-borderless {
-    .list-group-item {
-        border: none;
-    }
-}
-
 .boxed-icon {
     display: inline-flex;
     align-items: center;
@@ -36,4 +30,12 @@
 //ovveriding
 .card {
     overflow: hidden;
+}
+
+.swiper-wrapper {
+    &-linear {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+    }
 }
