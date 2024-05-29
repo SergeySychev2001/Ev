@@ -2,7 +2,8 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebP();
 
-const generalSwiper = new Swiper(".general-swiper", {
+const generalSwiper = document.querySelector('#general-swiper');
+new Swiper("#general-swiper", {
 	spaceBetween: 30,
 	loop: true,
 	autoHeight: true,
@@ -18,15 +19,22 @@ const generalSwiper = new Swiper(".general-swiper", {
 		},
 	},
 	navigation: {
-		prevEl: "#gen-sw-left",
-		nextEl: "#gen-sw-right",
+		prevEl: generalSwiper.querySelector("#nav-prev"),
+		nextEl: generalSwiper.querySelector("#nav-next"),
 	},
+	pagination: {
+		el: generalSwiper.querySelector("#nav-paging")
+	}
 });
 
-const objectsSwiper = new Swiper(".objects-swiper", {
+const objectsSwiper = document.querySelector('#objects-swiper');
+new Swiper("#objects-swiper", {
 	autoHeight: true,
 	loop: true,
 	spaceBetween: 30,
+	autoplay: {
+		delay: 3000,
+	},
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
@@ -39,7 +47,10 @@ const objectsSwiper = new Swiper(".objects-swiper", {
 		},
 	},
 	navigation: {
-		prevEl: "#obj-sw-left",
-		nextEl: "#obj-sw-right",
+		prevEl: objectsSwiper.querySelector("#nav-prev"),
+		nextEl: objectsSwiper.querySelector("#nav-next"),
 	},
+	pagination: {
+		el: objectsSwiper.querySelector("#nav-paging")
+	}
 });

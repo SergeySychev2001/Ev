@@ -27,7 +27,43 @@
     }
 }
 
+.yandex-map {
+    width: 75vw;
+    max-width: 40rem;
+    height: 75vw;
+    max-height: 40rem;
+    @media (min-width: 576px) {
+        width: 60vw;
+        height: 60vw;
+    }
+    @media (min-width: 768px) {
+        width: 50vw;
+        height: 50vw;
+    }
+    @media (min-width: 992px) {
+        width: 40vw;
+        height: 40vw;
+    }
+    @media (min-width: 1200px) {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+.vertical-line {
+    height: 20px;
+    width: 2px;
+    background-color: $primary;
+}
+
 //ovveriding
 .card {
     overflow: hidden;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    width: auto !important;
 }
