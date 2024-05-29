@@ -17,19 +17,16 @@ const generalSwiper = new Swiper(".general-swiper", {
 			slidesPerView: 2,
 		},
 	},
+	navigation: {
+		prevEl: "#gen-sw-left",
+		nextEl: "#gen-sw-right",
+	},
 });
 
 const objectsSwiper = new Swiper(".objects-swiper", {
-	autoplay: {
-		enabled: true,
-		delay: 0,
-		disableOnInteraction: true,
-	},
 	autoHeight: true,
 	loop: true,
-	slidesPerView: 3,
 	spaceBetween: 30,
-	speed: 12000,
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
@@ -40,5 +37,9 @@ const objectsSwiper = new Swiper(".objects-swiper", {
 		1000: {
 			slidesPerView: 3,
 		},
+	},
+	navigation: {
+		prevEl: "#obj-sw-left",
+		nextEl: "#obj-sw-right",
 	},
 });

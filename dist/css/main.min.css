@@ -11877,12 +11877,6 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 
-.swiper-wrapper-linear {
-  -webkit-transition-timing-function: linear !important;
-  -o-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-}
-
 .header-block-width {
   width: 75vw;
   max-width: 40rem;
