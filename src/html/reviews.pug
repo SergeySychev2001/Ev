@@ -1,0 +1,16 @@
+mixin card(src)
+    .card.shadow.border-0.rounded-4.swiper-slide
+        .card-body.p-4.p-md-5
+            img.w-100(src=src)
+
+section.py-5
+    .container.px-3.px-md-5
+        include common/section-title
+        +section-title("Отзывы")
+        #reviews-swiper.swiper.p-3
+            .swiper-wrapper
+                +card("@img/review-1.jpg")
+                +card("@img/review-2.jpg")
+                +card("@img/review-3.jpg")
+                +card("@img/review-4.jpg")
+            include common/swiper-nav

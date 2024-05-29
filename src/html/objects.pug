@@ -1,5 +1,5 @@
 mixin card(img, title, text)
-    .card.rounded-4.swiper-slide
+    .card.shadow.border-0.rounded-4.swiper-slide
         .card-image
             img.w-100(src=img)
         .card-body.text-center
@@ -9,7 +9,7 @@ section.py-5
     .container.px-3.px-md-5
         include common/section-title
         +section-title("Перевозимая техника")
-        #objects-swiper.swiper
+        #objects-swiper.swiper.p-3
             .swiper-wrapper
                 +card("@img/bike.jpg", "Мототехника")
                 +card("@img/passenger.jpg", "Легковые авто")

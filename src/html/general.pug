@@ -1,5 +1,5 @@
 mixin card(title, text, icon)
-    .card.rounded-4.swiper-slide
+    .card.shadow.border-0.rounded-4.swiper-slide
         .card-body.p-4.p-md-5
             .d-flex.align-items-center.mb-4
                 .flex-shrink-0.boxed-icon.bg-primary.text-white.rounded-3.me-3
@@ -13,7 +13,7 @@ section.py-5
     .container.px-3.px-md-5
         include common/section-title
         +section-title("О нас")
-        #general-swiper.swiper
+        #general-swiper.swiper.p-3
             .swiper-wrapper
                 +card("Опыт более 5 лет", "Опыт эффективной и безопасной эвакуации различных видов техники с учетом всех технических особенностей.", "bi bi-clock-history")
                 +card("Профессиональный подход", "Наш опытный персонал обладает широкими знаниями и навыками в области эвакуации техники, что позволяет нам выполнять задачи качественно и безопасно.", "bi bi-person-fill")

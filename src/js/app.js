@@ -2,14 +2,29 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebP();
 
-const generalSwiper = document.querySelector('#general-swiper');
-new Swiper("#general-swiper", {
-	spaceBetween: 30,
-	loop: true,
-	autoHeight: true,
-	autoplay: {
-		delay: 5000,
-	},
+const setSwiper = ({ id, delay, breakpoints }) => {
+	const el = document.querySelector(id);
+	return new Swiper(id, {
+		autoHeight: true,
+		loop: true,
+		spaceBetween: 30,
+		autoplay: {
+			delay,
+		},
+		breakpoints,
+		navigation: {
+			prevEl: el.querySelector("#nav-prev"),
+			nextEl: el.querySelector("#nav-next"),
+		},
+		pagination: {
+			el: el.querySelector("#nav-paging"),
+		},
+	});
+};
+
+setSwiper({
+	id: "#general-swiper",
+	delay: 5000,
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
@@ -18,23 +33,11 @@ new Swiper("#general-swiper", {
 			slidesPerView: 2,
 		},
 	},
-	navigation: {
-		prevEl: generalSwiper.querySelector("#nav-prev"),
-		nextEl: generalSwiper.querySelector("#nav-next"),
-	},
-	pagination: {
-		el: generalSwiper.querySelector("#nav-paging")
-	}
 });
 
-const objectsSwiper = document.querySelector('#objects-swiper');
-new Swiper("#objects-swiper", {
-	autoHeight: true,
-	loop: true,
-	spaceBetween: 30,
-	autoplay: {
-		delay: 3000,
-	},
+setSwiper({
+	id: "#objects-swiper",
+	delay: 3000,
 	breakpoints: {
 		0: {
 			slidesPerView: 1,
@@ -46,11 +49,20 @@ new Swiper("#objects-swiper", {
 			slidesPerView: 3,
 		},
 	},
-	navigation: {
-		prevEl: objectsSwiper.querySelector("#nav-prev"),
-		nextEl: objectsSwiper.querySelector("#nav-next"),
+});
+
+setSwiper({
+	id: "#reviews-swiper",
+	delay: 5000,
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		500: {
+			slidesPerView: 2,
+		},
+		1000: {
+			slidesPerView: 3,
+		},
 	},
-	pagination: {
-		el: objectsSwiper.querySelector("#nav-paging")
-	}
 });
