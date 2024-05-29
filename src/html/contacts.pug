@@ -3,7 +3,7 @@ mixin image(src, href, label)
         img.me-3(src=src, style="width:1.5rem;height:1.5rem;")
         a.fs-4(href=href, target="_blank")=label
 
-section.py-5
+section.bg-primary.bg-opacity-10.py-5
     .container.px-3.px-md-5
         include common/section-title
         +section-title("Контакты")
