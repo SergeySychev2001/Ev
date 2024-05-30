@@ -1,2 +1,71 @@
-@import "bootstrap/bootstrap.scss";
-@import "general.scss";
+.bg-image {
+    position: absolute;
+    background-image: url("@img/road.png");
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.boxed-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    overflow: hidden;
+    & > img {
+        width: 100%;
+    }
+}
+
+.yandex-map {
+    width: 75vw;
+    max-width: 40rem;
+    height: 75vw;
+    max-height: 40rem;
+    @media (min-width: 576px) {
+        width: 60vw;
+        height: 60vw;
+    }
+    @media (min-width: 768px) {
+        width: 50vw;
+        height: 50vw;
+    }
+    @media (min-width: 992px) {
+        width: 40vw;
+        height: 40vw;
+    }
+    @media (min-width: 1200px) {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+.vertical-line {
+    height: 20px;
+    width: 2px;
+    background-color: var(--bs-primary);
+}
+
+//overiding
+.card {
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+}

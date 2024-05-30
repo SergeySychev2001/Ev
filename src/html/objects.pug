@@ -5,8 +5,8 @@ mixin card(img, title, text)
         .card-body.text-center
             span.card-title.fs-5=title
 
-section.py-5
-    .container.px-3.px-md-5
+section#objects.py-5
+    .container.px-3.px-md-5.scroll-tr
         include common/section-title
         +section-title("Перевозимая техника")
         #objects-swiper.swiper.p-3

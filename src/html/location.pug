@@ -3,8 +3,8 @@ mixin item(title)
         i.bi.bi-check-circle-fill.text-primary.me-3
         span.fs-3.fw-medium=title
 
-section.py-5
-    .container.px-3.px-md-5
+section#location.py-5
+    .container.px-3.px-md-5.scroll-tr
         include common/section-title
         +section-title("Где работаем")
         .d-flex.flex-column.align-items-center.gap-2 

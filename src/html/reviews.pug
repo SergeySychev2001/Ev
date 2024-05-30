@@ -3,8 +3,8 @@ mixin card(src)
         .card-body.p-4.p-md-5
             img.w-100(src=src)
 
-section.py-5
-    .container.px-3.px-md-5
+section#reviews.py-5
+    .container.px-3.px-md-5.scroll-tr
         include common/section-title
         +section-title("Отзывы")
         #reviews-swiper.swiper.p-3

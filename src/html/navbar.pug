@@ -1,17 +1,23 @@
-mixin nav-link(text)
+mixin nav-link(text, href)
     li.nav-item
-        span.nav-link=text
+        a.nav-link(href=href)=text
 
-nav.navbar.navbar-expand-lg.py-3
+nav.navbar.navbar-expand-lg  
     .container.px-3.px-md-5
-        a.navbar-brand(href="index.html")
-            span.fw-bolder.text-primary ЭвакуаторАбинск
-        button.navbar-toggler(type="button")
+        a.navbar-brand.text-primary.fw-bolder(href="#") ЭвакуаторАбинск
+        button.navbar-toggler&attributes({
+            "data-bs-toggle": "collapse",
+            "data-bs-target": "#navbarSupportedContent",
+            "aria-controls": "navbarSupportedContent",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation",
+        })
             span.navbar-toggler-icon
-        .collapse.navbar-collapse 
-            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
-                +nav-link("Главная")
-                +nav-link("О нас")
-                +nav-link("Что перевозим")
-                +nav-link("Услуги")
-                +nav-link("Контакты")
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.fw-bolder.small
+                +nav-link("Где работаем", "#location")
+                +nav-link("О нас", "#general")
+                +nav-link("Техника", "#objects")
+                +nav-link("Услуги", "#services")
+                +nav-link("Отзывы", "#reviews")
+                +nav-link("Контакты", "#contacts")

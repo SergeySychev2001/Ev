@@ -1,10 +1,10 @@
 mixin image(src, href, label)
     .d-flex.align-items-center
         img.me-3(src=src, style="width:1.5rem;height:1.5rem;")
-        a.fs-4(href=href, target="_blank")=label
+        a.text-decoration-none.fs-4(href=href, target="_blank")=label
 
-section.bg-primary.bg-opacity-10.py-5
-    .container.px-3.px-md-5
+section#contacts.bg-primary.bg-opacity-10.py-5
+    .container.px-3.px-md-5.scroll-tr
         include common/section-title
         +section-title("Контакты")
         .row.justify-content-center
@@ -14,7 +14,10 @@ section.bg-primary.bg-opacity-10.py-5
                         .d-flex.flex-column.align-items-center.gap-4
                             .d-flex.align-items-center
                                 i.fs-4.bi.bi-telephone-fill.me-3
-                                a.fs-4(href="tel:+74951234567") +74951234567
+                                a.text-decoration-none.fs-4(href="tel:+74951234567") +74951234567
+                            .d-flex.align-items-center
+                                i.fs-4.bi.bi-telephone-fill.me-3
+                                a.text-decoration-none.fs-4(href="tel:+74951234567") +74951234567
                             +image("@img/vk.svg", "https://vk.com/id638698360", "ВКонтакте")
                             +image("@img/avito.svg", "https://www.avito.ru/abinsk/predlozheniya_uslug/evakuator_3788561928", "Авито")
                             +image("@img/instagram.svg", "#", "Instagram")
